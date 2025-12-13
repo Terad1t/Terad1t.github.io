@@ -7,7 +7,168 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style src = "style.css"></style>
+  <style src = "style.css">body {
+  height: 150vh;
+  background: linear-gradient(to top, #1a0033, #000000);
+  color: white; 
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #bb86fc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+header h1:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a i {
+  font-size: 1.2rem;
+  color: #bb86fc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #bb86fc;
+}
+
+.social-links a:hover i {
+  transform: scale(1.2);
+  color: white;
+}
+
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a i {
+  font-size: 1.2rem;
+  color: #bb86fc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bb86fc;
+}
+
+nav a:hover i {
+  transform: scale(1.2);
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+main section {
+    margin-bottom: 3rem
+}
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    justify-content: center;
+    margin-top: 1rem
+}
+
+.icons i {
+    color: #bb86fc;
+    transition: transform 0.3s ease, color 0.3s ease
+}
+.icons i:hover {
+    transform: scale(1.2);
+    color: #ffffff
+}
+
+
+.destaque {
+  color: #bb86fc;
+  font-weight: bold;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #bb86fc;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}</style>
 
 </head>
 <body>
