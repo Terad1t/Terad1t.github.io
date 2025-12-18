@@ -1,5 +1,5 @@
 body {
-  height: 150vh;
+  min-height: 100vh;
   background: linear-gradient(to top, #1a0033, #000000);
   color: white; 
   font-family: sans-serif;
@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,11 +96,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 main section {
+    padding: 2rem 0;
     margin-bottom: 3rem
 }
 main h2 {
@@ -119,7 +119,6 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
 }
-
 
 .icons {
     display: flex;
@@ -159,4 +158,76 @@ footer {
 .botao:hover {
   background-color: #ffffff;
   transform: scale(1.05);
+}
+
+#projetos {
+  width: 100%;
+  max-width: 850px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(187, 134, 252, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(187, 134, 252, 0.4);
+}
+
+.card h3 {
+  color: #bb86fc;
+  margin-bottom: 0rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: #bb86fc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+.sobre-lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  max-width: 650px;
+  text-align: left;
+}
+
+.sobre-lista li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sobre-lista li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #bb86fc;
+  font-size: 1.3rem;
+}
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
